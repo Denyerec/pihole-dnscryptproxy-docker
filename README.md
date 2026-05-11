@@ -6,6 +6,10 @@ pihole https to avoid conflict with any existing web containers.
 Remove .example from both the pihole.toml and dnscrypt-proxy configs
 before running.
 
+Docker container configured to use external network sozuholenet.
+Create first with:
+> docker network create -d bridge sozuholenet
+
 
 DNSCrypt-Proxy uses a bind mount to store its configuration here:
 ```
