@@ -74,6 +74,8 @@ services:
       - sozuholenet
     restart: unless-stopped
 
+
+# Don't forget to create sozuholenet externally with > docker network create sozuholenet
 networks:
   sozuholenet:
-    driver: bridge
+    external: true
